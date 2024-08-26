@@ -1,0 +1,7 @@
+spring:
+  application.name: "kafka-dummy-producer"
+  kafka:
+    boostrap-servers: "${KAFKA_BOOSTRAP_SERVER:http://localhost:19092"
+    topics:
+      documents: "${DOCUMENTS_TOPIC:documents}"
+      orders: "${ORDERS_TOPIC:orders}"
